@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2a2c31 0%, #3e4042 100%);
+    background-image: url(/fundo.webp);
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1450px;
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 30px;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+form,
+.lista-container {
+    background: #fffffff2;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+#listaProdutos {
+    height: 500px;
+    overflow-y: auto;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    color: #c47123;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    /* font-family: Pixelify Sans; */
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #61a728;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+    /* font-family: Pixelify Sans; */
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.btn-secundario {
+    background: #6c757d;
+}
+
+.acoes {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.btn-editar,
+.btn-excluir {
+    width: auto;
+    min-width: 70px;
+    padding: 8px 12px;
+    margin-top: 80px;
+}
+
+.btn-editar {
+    background: #28a792;
+}
+
+.btn-excluir {
+    background: #dc3545;
+}
+
+
+.produto-card {
+    background: #ffddd6;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #c47123;
+}
+
+#statusMsg {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #28a792;
+    min-height: 20px;
+    text-align: center;
+}
+
+#listaProdutos {
+    overflow: auto;
+}
